@@ -16,12 +16,66 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  background-color: rgb(231, 233, 235);
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Creating the box that contains all the content */
+.mainBlock {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
+  border: 1px solid rgb(73, 73, 73);
+  margin: +1% +0;
+}
+
+
+
+/* Make the box responsive to different devices */
+
+
+
+/* header */
+.siteHeader{
+  margin: 1%;
+  margin-left: 2%;
+  width:fit-content
+}
+
+
+/* name */
+.headerTitle {
+  font-size: 50px;
+}
+
+/* description */
+.headerLabel{
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* menu */
+.headerMenu{
+  margin-top: 10%;
+}
+
+
+.content {
+  position: fixed;
+  bottom: 6%;
+  right: 3%;
+  width: 300px; /* Adjust the width as needed */
+  height: 50%; /* Adjust the height as needed */
+  padding: 20px;
+}
+
+
+
+
