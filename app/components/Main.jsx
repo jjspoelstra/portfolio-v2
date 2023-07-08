@@ -1,5 +1,6 @@
 import Content from "./Content"
 import Header from "./Header"
+import Socials from "./Socials"
 
 
 export default function Main() {
@@ -9,6 +10,7 @@ export default function Main() {
       <section className="mainBlock">
         <Header/>
         <Content/>
+        <Socials/>
       </section>
   
   

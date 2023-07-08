@@ -32,7 +32,7 @@ html, body {
   left: 2%;
   right: 2%;
   bottom: 2%;
-  border: 1px solid rgb(73, 73, 73);
+  border: 1px solid rgb(94, 100, 104);
   margin: +1% +0;
 }
 
@@ -43,10 +43,11 @@ html, body {
 
 
 /* header */
-.siteHeader{
+.siteHeader, .socials{
   margin: 1%;
   margin-left: 2%;
-  width:fit-content
+  width:fit-content;
+
 }
 
 
@@ -66,16 +67,77 @@ html, body {
   margin-top: 10%;
 }
 
-
-.content {
+.socials{
   position: fixed;
-  bottom: 6%;
-  right: 3%;
-  width: 300px; /* Adjust the width as needed */
-  height: 50%; /* Adjust the height as needed */
-  padding: 20px;
+  bottom: 4%
+}
+
+
+.displayBox {
+  background-color: rgb(213, 217, 221);;
+  width: 33.333%;
+  height: 40vh;
+  margin: 1.5%;
+  margin-top: 6%;
+  border-radius: 1.5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.border{
+  border-top: 2px solid rgb(94, 100, 104);
+}
+
+.shorten{
+  width: fit-content;
 }
 
 
 
+.process *{
+  margin-top: 2%;
+  margin-right: 1%;
+}
 
+.projects{
+  position: fixed;
+  top: 17%;
+  bottom: 65%;
+  right: 10%;
+  left: 35%;
+  width: 55%; 
+}
+
+
+.projects > * {
+  text-align: left;
+  margin-bottom: 1%;
+}
+
+
+
+.bigText{
+  font-size: 50px;
+}
+
+.smallText{
+  font-size: 12px;
+}
+
+.icons *{
+  font-size:large;
+  padding: 1%
+}
+
+.greyText{
+  color: rgb(172, 176, 199);
+}
+
+.gif{
+  width: 50%;
+  border-radius: 5%;
+}
+
+.preview{
+  margin-left: 2%;
+}

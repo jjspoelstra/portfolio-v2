@@ -10,15 +10,15 @@ import { motion } from "framer-motion"
 export default function ListItem({text, variants}) {
     const pathname = usePathname()
     
-    if ((text === 'home' && pathname !== '/') || (text !== 'home' && `/${text}` !== pathname)){
+    if ((text === 'about' && pathname !== '/') || (text !== 'about' && `/${text}` !== pathname)){
         return (
               <motion.li
-              className=""
+              className="shorten"
               variants={variants}
-              whileHover={{ scale: 1.05, transition: { type: 'spring', stiffness: 150 } }}
+              whileHover={{ scale: 1.5, transition: { type: 'spring', stiffness: 100 } }}
               whileTap={{ opacity: 0, transition: { duration: 0.5 } }}
               >
-                <Link href={text === 'home' ? '/' : `/${text}`}>
+                <Link href={text === 'about' ? '/' : `/${text}`}>
                 {text}
               </Link>
                   
@@ -27,11 +27,12 @@ export default function ListItem({text, variants}) {
     } else {
         return (
             <motion.li
-              className=""
+              className="greyText"
               variants={variants}
               >
-                <span>●</span>
-                  
+                <span> - </span>
+                <span>{text}</span>
+                
               </motion.li>
         )
     }
