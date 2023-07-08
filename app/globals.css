@@ -125,8 +125,9 @@ html, body {
 }
 
 .icons *{
-  font-size:large;
-  padding: 1%
+  font-size:larger;
+  padding: 1%;
+  margin-right: 5%;
 }
 
 .greyText{

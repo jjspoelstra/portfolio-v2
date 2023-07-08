@@ -2,6 +2,7 @@
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 
+
 const transition = { ease: "easeIn", duration: 3, ease: [0, 0.71, 0.2, 1.00] };
 
 export default function Content() {

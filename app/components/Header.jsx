@@ -28,7 +28,7 @@ export default function Header() {
               <ListItem text={'about'} />
               <ListItem text={'projects'} />
               <ListItem text={'writing'} />
-              <ListItem text={'photography'} />
+              
               
             </motion.ol>
          
