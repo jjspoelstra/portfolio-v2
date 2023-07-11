@@ -127,7 +127,7 @@ html, body {
 .icons *{
   font-size:larger;
   padding: 1%;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 
 .greyText{
@@ -141,4 +141,19 @@ html, body {
 
 .preview{
   margin-left: 2%;
+}
+
+img{
+  width: auto;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+
+.extend{
+  height: 40%;
+  margin-top: 6%;
+}
+
+.home{
+  margin-top: 8%;
 }

@@ -25,9 +25,10 @@ export default function Header() {
               animate="visible"
               exit="hidden"
             >
+              <ListItem text={'home'} />
               <ListItem text={'about'} />
               <ListItem text={'projects'} />
-              <ListItem text={'writing'} />
+              {/* <ListItem text={'writing'} /> */}
               
               
             </motion.ol>

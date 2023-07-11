@@ -1,6 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 
 const transition = { ease: "easeIn", duration: 3, ease: [0, 0.71, 0.2, 1.00] };
@@ -9,16 +10,16 @@ export default function Content() {
     const pathname = usePathname()
 
 
-    if (pathname === '/') {
+    if (pathname === '/about') {
         return (
           <>
             <motion.section className='projects'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={transition}>
-            <h2> Hey, I'm Joe, </h2>
+            
             <br />
-            <p> I'm a software engineer with a past in crisis counseling and IT consulting. I've seen how poor software can stress out <b>everyone</b> involved. Having decided to take matters into my own hands, I now work as a freelancer. I strive to create web applications that are both easy to use and provide a genuine service to people, whether for joy, utility, or anything in-between. When I'm not coding, you'll find me writing short stories or working on my upcoming novel.</p>
+            <p> I'm a software engineer with a past in crisis counseling and IT consulting. I've seen how poor software can cause stress for <b>everyone</b> involved. Having decided to take matters into my own hands, I now work as a freelancer. I strive to create web applications that are both easy to use and provide a genuine service to people, whether for joy, utility, or anything in-between. When I'm not coding, you'll find me writing short stories or working on my upcoming novel.</p>
             <br />
             <br />
            
@@ -83,11 +84,23 @@ export default function Content() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={transition}>
-                {/* <p>ursa (here in my solitude)</p>
+            <p>
+              A few small exerpts from my novel: ursa (here in my solutide) (working title), and short stories.
+            </p>
+
+              <br />
+
+              <p>ursa (here in my solitude)</p>
+                <p></p>
               <p>Sodom and Gomorrah</p>
+                <p></p>
               <p>The Zest of a Lime</p>
-              <p>Clamor, Inchworm!</p> */}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam neque, impedit tempora vel, consequatur omnis perspiciatis officia accusantium suscipit aliquam repellat, minima dolor laboriosam cumque quaerat architecto sit alias distinctio!
+                <p> - Her pops would sooner think someone was "lyin' and screwin'" with him than believe a door could creek or a dish could fall of its own volition. He didn't believe anything could happen a person didn't make. Human were put here by God for a reason, he said.
+                  <br />
+                  He was the kind of man who couldn't stand the sour taste of water, and much preferred milk. </p>
+              <p>Clamor, Inchworm!</p> 
+                <p></p>
+              
             </motion.section>
         )
     } else if (pathname === '/photography') {
@@ -96,10 +109,40 @@ export default function Content() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={transition}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eius magni aut tenetur culpa. Dicta optio ducimus minus. Ipsam possimus molestiae earum fugiat in dolores voluptate ad velit culpa et.
+            <span> ursa (in this solitude) - exerpts</span>
+            <span> The Zest of a Lime - exerpts</span>
+            <span> Sodom and Gomorrah - exerpts</span>
+            <span> Clamor! The plight of the inchworm - exerpts</span>
             
           </motion.section>
       )
-  } 
+  } else if (pathname === '/'){
+    return(
+      <>
+        <motion.section 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={transition}
+        className='projects flex extend'>
+          <section className='home'>
+            <h1 className ='bigText'> Hi, I'm Joe, </h1>
+            <span> A Full-Stack Engineer based in New York City</span>
+            {/* <br />
+            <br />
+            <p className="about-brief">I combine my background in crisis counseling and IT consulting to create web applications that bring joy and utility to people's lives. When I'm not coding, I'm also a budding novelist. </p> {/* Brief about 
+            <br /> */}
+            <br />
+            <br />
+            <motion.p whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }}>
+              <Link href={'/about'}> 
+                <b>Learn more about me</b>
+              </Link>
+              </motion.p>
+          </section>
+          <img className='small' src="joe-photo.jpg" alt="" />
+        </motion.section>
+      </>
+    )
+  }
     
   }

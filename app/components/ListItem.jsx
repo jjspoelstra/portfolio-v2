@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 export default function ListItem({text, variants}) {
     const pathname = usePathname()
     
-    if ((text === 'about' && pathname !== '/') || (text !== 'about' && `/${text}` !== pathname)){
+    if ((text === 'home' && pathname !== '/') || (text !== 'home' && `/${text}` !== pathname)){
         return (
               <motion.li
               className="shorten"
@@ -18,7 +18,7 @@ export default function ListItem({text, variants}) {
               whileHover={{ scale: 1.5, transition: { type: 'spring', stiffness: 100 } }}
               whileTap={{ opacity: 0, transition: { duration: 0.5 } }}
               >
-                <Link href={text === 'about' ? '/' : `/${text}`}>
+                <Link href={text === 'home' ? '/' : `/${text}`}>
                 {text}
               </Link>
                   
