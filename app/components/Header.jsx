@@ -1,22 +1,19 @@
 'use client'
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import ListItem from "./ListItem";
-import { useEffect, useState } from "react";
+import { AnimationProvider } from "../context/AnimationContext";
 
 
 
 export default function Header() {
-  const [shouldAnimate, setShouldAnimate] = useState(false);
-
-  useEffect(() => {
-    setShouldAnimate(true);
-  }, []);
+  
 
   return (
-    <div className="siteHeader">
+    <AnimationProvider>
+    <div className="siteHeader hide-caret">
       <h1 className="headerTitle"> joseph j. spoelstra </h1>
-      <p className="headerLabel"> developer & writer</p> 
+      <p className="headerLabel"> web developer</p> 
       <p className="headerLabel"></p>
       <nav className="headerMenu">
         
@@ -27,7 +24,9 @@ export default function Header() {
             >
               <ListItem text={'home'} />
               <ListItem text={'about'} />
-              <ListItem text={'projects'} />
+              <ListItem className='subsection' text={'dev'} />
+              <ListItem className='subsection' text={'freelance'} />
+              <ListItem className='subsection' text={'projects'} />
               {/* <ListItem text={'writing'} /> */}
               
               
@@ -35,5 +34,6 @@ export default function Header() {
          
       </nav>
     </div>
+    </AnimationProvider>
   );
 }

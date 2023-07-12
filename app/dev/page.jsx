@@ -1,5 +1,5 @@
 'use client'
-import About from "../components/About"
+import Dev from "../components/Dev"
 import Header from "../components/Header"
 import Socials from "../components/Socials"
 
@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <section className="mainBlock hide-caret">
           <Header/>
-          <About/>
+          <Dev/>
           <Socials/>
       </section>
     </main>

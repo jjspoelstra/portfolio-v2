@@ -1,16 +1,20 @@
 'use client'
-import About from "../components/About"
+import Freelance from "../components/Freelance"
 import Header from "../components/Header"
 import Socials from "../components/Socials"
+import { AnimationProvider } from "../context/AnimationContext"
 
 export default function Home() {
   
   return (
     <main>
       <section className="mainBlock hide-caret">
+        <AnimationProvider>
           <Header/>
-          <About/>
+          <Freelance/>
           <Socials/>
+        </AnimationProvider>
+          
       </section>
     </main>
 

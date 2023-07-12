@@ -84,9 +84,7 @@ html, body {
   justify-content: center;
 }
 
-.border{
-  border-top: 2px solid rgb(94, 100, 104);
-}
+
 
 .shorten{
   width: fit-content;
@@ -118,6 +116,7 @@ html, body {
 
 .bigText{
   font-size: 50px;
+  letter-spacing: 0px;
 }
 
 .smallText{
@@ -127,7 +126,7 @@ html, body {
 .icons *{
   font-size:larger;
   padding: 1%;
-  margin-right: 15%;
+  margin-right: 20%;
 }
 
 .greyText{
@@ -156,4 +155,39 @@ img{
 
 .home{
   margin-top: 8%;
+}
+
+.about{
+  position: fixed;
+  top: 25%;
+  right: 10%;
+  left: 36%;
+  width: 50%; 
+}
+
+.freelance {
+  top: 20%
+}
+
+.hide-caret {
+  caret-color: transparent;
+}
+
+.border{
+  padding-top: 5%;
+  border-bottom: 1px solid rgb(94, 100, 104)
+}
+
+.break{
+  margin-top: 5%;
+}
+
+.fade{
+  scale: 1.05;
+  opacity: 0.5;
+  border: 1px solid red
+}
+
+.subsection{
+  margin-left: 5px;
 }

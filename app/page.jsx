@@ -1,13 +1,13 @@
-import Content from "./components/Content"
+import HomePage from "./components/HomePage"
 import Header from "./components/Header"
 import Socials from "./components/Socials"
 
 export default function Home() {
   return (
     <main>
-      <section className="mainBlock">
+      <section className="mainBlock hide-caret">
         <Header/>
-        <Content/>
+        <HomePage/>
         <Socials/>
       </section>
     </main>

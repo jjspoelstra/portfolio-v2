@@ -6,7 +6,7 @@ import Socials from "../components/Socials"
 export default function Home() {
   return (
     <main>
-      <section className="mainBlock">
+      <section className="mainBlock hide-caret">
         <Header/>
         <Content/>
         <Socials/>
