@@ -21,7 +21,7 @@ export default function About(){
             <motion.p className='break '  whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }}>
             <Link href={'/dev'}> 
                 <b>Looking for a dev?</b>
-              </Link>
+              </Link> 
             </motion.p>
             <br />
             <motion.p whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }}>
