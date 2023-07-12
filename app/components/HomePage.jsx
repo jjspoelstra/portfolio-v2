@@ -53,7 +53,7 @@ export default function Home(){
                   
                   
                   
-                  <br />
+                  
                   <br />
                   <motion.p whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }} className='left'>
                     <Link href={'/about'}> 

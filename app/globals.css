@@ -272,7 +272,8 @@ img{
   
   .home{
     width: 90%;
-    margin-left: 0%
+    margin-left: 0%;
+    align-items: center;
   }
   .small{
     width: 40%;
