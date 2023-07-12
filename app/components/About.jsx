@@ -19,9 +19,9 @@ export default function About(){
             <br />
 
             <motion.p className='break '  whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }}>
-              <b>
-                Looking for a dev? 
-              </b>
+            <Link href={'/dev'}> 
+                <b>Looking for a dev?</b>
+              </Link>
             </motion.p>
             <br />
             <motion.p whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }}>
