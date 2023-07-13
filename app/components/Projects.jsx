@@ -41,7 +41,7 @@ export default function Projects(){
     </div>
     <br />
     <div>
-      <a href="https://shielded-ravine-86283.herokuapp.com/year/2023" target="_blank"><motion.p whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }}><span className='bigText'>Interactive NBA History</span>
+      <a href="https://interactive-nba-history.vercel.app/brackets/2023" target="_blank"><motion.p whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }}><span className='bigText'>Interactive NBA History</span>
       {isMobile ? <span className='smallText flex'>A site with interactive playoff brackets, season statistics, and more. </span>: <span className='smallText'>A site with interactive playoff brackets, season statistics, and more. </span>}
       </motion.p></a>
       <strong>JavaScript/EJS/Node/Express/Puppeteer </strong>
