@@ -57,11 +57,7 @@ export default function Projects(){
     <br />
     <br />
     <br />
-    <section className='github hide'>
-    <a href="https://github.com/jjspoelstra" target="_blank"><motion.p whileHover={{ scale: 1.05, opacity: 0.5, transition: { type: 'tween', stiffness: 100 } }}><span className='bigText'>jjspoelstra</span></motion.p></a>
-    <span className='smallText hide'>Check out more on my Github profile </span>
-
-    </section>
+   
   </motion.section>
     )
 }
