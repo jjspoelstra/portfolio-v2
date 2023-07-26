@@ -339,6 +339,14 @@ img{
   }
 }
 
+@media (max-height: 850px) {
+  .freelance{
+    width: 70%;
+    left: 25%;
+    top: 16%
+  }
+}
+
 @media (max-width: 950px) {
   .freelance{
     width: 75%;
